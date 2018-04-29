@@ -10,11 +10,11 @@ fs.readFile(fileName, "utf-8", function (error, file) {
     if (error) {
         throw error;
     }
-    const lint = jslint(file).warnings;
-    if (lint.length === 0) {
+    const lint = jslint(file);
+    if (lint.ok) {
         console.log(fileName + " is ok.");
     }
-    if (lint.length !== 0) {
+    if (!lint.ok) {
         console.log(jslint(file).warnings);
     }
 });
