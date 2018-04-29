@@ -1,7 +1,8 @@
+/*jslint
+    node
+*/
 const assert = require("assert").strictEqual;
-
-function makeGreeting() {
-}
+const makeGreeting = require("./index");
 
 assert(makeGreeting(), "Hello world!");
 console.log("Success");
