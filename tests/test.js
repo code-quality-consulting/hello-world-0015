@@ -6,5 +6,5 @@ const makeGreeting = require("../index");
 
 assert(makeGreeting(), "Hello world!");
 assert(makeGreeting("Zach"), "Hello Zach!");
-assert(makeGreeting("", "Spanish"), "¡Holla mundo!");
+assert(makeGreeting("", "Spanish"), "¡Hola mundo!");
 console.log("Success");
