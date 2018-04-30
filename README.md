@@ -2,5 +2,5 @@
 
 ## User Cases
 * Communicates "Hello world!" to a user.
-* Greets a user personally.
+* Communicates a general greeting and user's name. 
 * Communicates "¡Holla Mundo!" to a user.
