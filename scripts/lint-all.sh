@@ -1,1 +1,1 @@
-node ./utilities/lint.js ./tests/test.js ./index.js ./utilities/lint.js
+node --experimental-modules ./utilities/lint.mjs ./tests/test.mjs ./index.mjs ./utilities/lint.mjs

@@ -1,12 +1,11 @@
 /*jslint
     node
 */
-const jslint = require("../dependencies/jslint");
-const fs = require("fs");
+import jslint from "../dependencies/jslint";
+import fs from "fs";
 const fileNames = process.argv.slice(2);
 
 fileNames.forEach(function (fileName) {
-    "use strict";
     fs.readFile(fileName, "utf-8", function (error, file) {
         if (error) {
             throw error;
